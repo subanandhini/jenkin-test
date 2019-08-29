@@ -12,7 +12,7 @@ pipeline {
 			  sh 'echo Testing Completed Successfully !!!!!!..... By SanjaySaravanan'
 		  }
 	  }
-  	stage('Build') {
+  	/*stage('Build') {
 	  steps {
 	  sh 'mvn clean package'
 	 // archiveArtifacts 'target/Jenkins.war'
@@ -22,6 +22,6 @@ pipeline {
 		  steps {
 			  deploy adapters: [tomcat8(credentialsId: 'admin', path: '', url: 'http://localhost:8010')], contextPath: null, war: 'target/Jenkins.war'
 		  }
-	  }
+	  }*/
   }
 }
