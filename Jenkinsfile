@@ -7,15 +7,15 @@ pipeline {
   stages {
 	  stage('Test'){
 		  steps{
-			  sudo 'java -version'
-			  sudo 'mvn -version'
-			  sudo 'echo Testing Completed Successfully'
+			  sh 'java -version'
+			  sh 'mvn -version'
+			  sh 'echo Testing Completed Successfully'
 		  }
           
 	  }
       stage('Build'){
 		  steps{
-			  sudo 'mvn clean install'
+			  sh 'mvn clean install'
 		  }
           
 	  }
