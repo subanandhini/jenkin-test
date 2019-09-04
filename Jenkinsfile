@@ -2,7 +2,7 @@ pipeline {
   agent any
 	tools {
 		jdk "JDK_HOME"
-		maven "maveen"
+		maven "M2_HOME"
 	}
   stages {
 	  stage('Test'){
