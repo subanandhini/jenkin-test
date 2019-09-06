@@ -2,13 +2,13 @@ pipeline {
   agent any
 	tools {
 		jdk "JDK_HOME"
-		maven "MAVEN_HOME"
+		maven "maven_home"
 	}
   stages {
 	  stage('Test'){
 		  steps{
 			  sh 'java -version'
-			  sh '/usr/share/maven/bin/mvn -version'
+			  sh 'mvn -version'
 			  sh 'echo Testing Completed Successfully'
 		  }
           
