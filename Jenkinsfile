@@ -8,7 +8,7 @@ pipeline {
 	  stage('Test'){
 		  steps{
 			  sh 'java -version'
-			  sh 'mvn -version'
+			  sh '/usr/share/maven/bin/mvn -version'
 			  sh 'echo Testing Completed Successfully'
 		  }
           
